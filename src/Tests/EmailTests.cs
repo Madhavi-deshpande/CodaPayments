@@ -5,16 +5,16 @@ using System;
 namespace Tests
 {
     [TestFixture]
-    class PhoneNumberTests
+    class EmailTests
     {
         [Test]
-        public void PhoneNumberFormatCorrect()
+        public void EmailFormatCorrect()
         {
             //Arrange
-            string number = "1234567890";
+            string email = "abc@gmail.com";
 
             // Act
-            bool res = PhoneNumber.IsPhoneNbr(number);
+            bool res = EMail.IsEmail(email);
 
             //Assert
             Console.WriteLine("test");
@@ -23,13 +23,13 @@ namespace Tests
         }
 
         [Test]
-        public void PhoneNumberFormatNotCorrect()
+        public void EmailFormatNotCorrect()
         {
             //Arrange
-            string number = "abcd123";
+            string email = "@gmailabcd123";
 
             // Act
-            bool res = PhoneNumber.IsPhoneNbr(number);
+            bool res = EMail.IsEmail(email);
 
             //Assert
 
