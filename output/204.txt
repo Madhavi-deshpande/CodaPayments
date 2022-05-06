@@ -1,29 +1,29 @@
 <EMPLOYEE_ID>
-  <Value>198</Value>
+  <Value>204</Value>
   <Type>number</Type>
 </EMPLOYEE_ID>
 <FIRST_NAME>
-  <Value>Donald</Value>
+  <Value>Hermann</Value>
   <Type>stirng_value</Type>
 </FIRST_NAME>
 <LAST_NAME>
-  <Value>OConnell</Value>
+  <Value>Baer</Value>
   <Type>stirng_value</Type>
 </LAST_NAME>
 <EMAIL>
-  <Value>DOCONNEL@xyz.com</Value>
+  <Value>HBAER@xyz.com</Value>
   <Type>email</Type>
 </EMAIL>
 <PHONE_NUMBER>
-  <Value>650.507.9833</Value>
+  <Value>515.123.8888</Value>
   <Type>phoneNumber</Type>
 </PHONE_NUMBER>
 <JOB_ID>
-  <Value>SH_CLERK</Value>
+  <Value>PR_REP</Value>
   <Type>stirng_value</Type>
 </JOB_ID>
 <SALARY>
-  <Value>2600</Value>
+  <Value>10000</Value>
   <Type>number</Type>
 </SALARY>
 <COMMISSION_PCT>
@@ -31,10 +31,10 @@
   <Type>stirng_value</Type>
 </COMMISSION_PCT>
 <MANAGER_ID>
-  <Value>124</Value>
+  <Value>101</Value>
   <Type>number</Type>
 </MANAGER_ID>
 <DEPARTMENT_ID>
-  <Value>50</Value>
+  <Value>70</Value>
   <Type>number</Type>
 </DEPARTMENT_ID>
