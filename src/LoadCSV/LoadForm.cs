@@ -67,12 +67,15 @@ namespace LoadCSV
                             fields.Add(val.Value.ToString());
                         }
                         var dirName = Path.GetDirectoryName(filePath);
+                        var rootNode = Path.GetFileNameWithoutExtension(filePath);  // cosnidering the file name as root node for each records
                         string path = dirName +@"\" + fields[0] + ".txt";
-                        using (StreamWriter sw = File.CreateText(path))
+                         using (StreamWriter sw = File.CreateText(path))
                         {
+                           XElement node = new XElement(rootNode);
                             for (int j = 0; j < fields.Count; j++)
                             {
                                 string type = TypesOfRecords.stirng_value.ToString();
+
                                  if (PhoneNumber.IsPhoneNbr(fields[j]))
                                   {
                                     type = TypesOfRecords.phoneNumber.ToString();
@@ -85,13 +88,14 @@ namespace LoadCSV
                                 {
                                     type = TypesOfRecords.number.ToString();
                                 }
-                                XElement node = new XElement(
+                                 node.Add(new XElement(
                                         new XElement(headers[j].Replace(" ", ""),
                                          new XElement("Value", fields[j]),
                                          new XElement("Type", type))
-                                         );
-                                sw.Write(node.ToString() + "\n");
+                                         ));
+                                                          
                             }
+                            sw.Write(node.ToString() + "\n");
                         }
                     }
                 }
