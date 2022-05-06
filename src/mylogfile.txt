@@ -1,0 +1,289 @@
+2022-05-01 22:10:00,078 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 60
+2022-05-01 22:12:00,563 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 60
+2022-05-01 22:48:17,765 [1] ERROR LoadCSV.LoadForm - Erro message:The ',' character, hexadecimal value 0x2C, cannot be included in a name.
+System.Xml.XmlException: The ',' character, hexadecimal value 0x2C, cannot be included in a name.
+   at System.Xml.XmlConvert.VerifyNCName(String name, ExceptionType exceptionType)
+   at System.Xml.Linq.XName..ctor(XNamespace ns, String localName)
+   at System.Xml.Linq.XNamespace.GetName(String localName)
+   at System.Xml.Linq.XName.Get(String expandedName)
+   at System.Xml.Linq.XName.op_Implicit(String expandedName)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 80
+2022-05-02 13:40:38,889 [1] ERROR LoadCSV.LoadForm - Erro message:The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.
+System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.
+   at System.IO.PathHelper.GetFullPathName()
+   at System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 60
+2022-05-02 14:41:26,903 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 59
+2022-05-02 18:15:31,512 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 60
+2022-05-03 10:25:16,959 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 42
+2022-05-03 10:25:36,700 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 42
+2022-05-04 09:16:00,484 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:16:26,977 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:18:05,011 [1] ERROR LoadCSV.LoadForm - Erro message:The ';' character, hexadecimal value 0x3B, cannot be included in a name.
+System.Xml.XmlException: The ';' character, hexadecimal value 0x3B, cannot be included in a name.
+   at System.Xml.XmlConvert.VerifyNCName(String name, ExceptionType exceptionType)
+   at System.Xml.Linq.XName..ctor(XNamespace ns, String localName)
+   at System.Xml.Linq.XNamespace.GetName(String localName)
+   at System.Xml.Linq.XName.Get(String expandedName)
+   at System.Xml.Linq.XName.op_Implicit(String expandedName)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 77
+2022-05-04 09:18:19,152 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:19:24,956 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:19:46,654 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:20:18,015 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:20:36,653 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:21:04,736 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 58
+2022-05-04 09:32:49,096 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Users\z003wbsy\Desktop\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Users\z003wbsy\Desktop\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 40
+2022-05-04 09:36:16,667 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 40
+2022-05-04 09:46:49,179 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 65
+2022-05-04 09:58:58,441 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Users\z003wbsy\Desktop\Sample100.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Users\z003wbsy\Desktop\Sample100.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 40
+2022-05-04 10:01:25,282 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 40
+2022-05-04 10:02:05,365 [1] ERROR LoadCSV.LoadForm - Erro message:Cannot read from a closed TextReader.
+System.ObjectDisposedException: Cannot read from a closed TextReader.
+   at System.IO.__Error.ReaderClosed()
+   at System.IO.StreamReader.ReadLine()
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 46
+2022-05-04 10:02:20,879 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 65
+2022-05-04 10:04:10,646 [1] ERROR LoadCSV.LoadForm - Erro message:Cannot read from a closed TextReader.
+System.ObjectDisposedException: Cannot read from a closed TextReader.
+   at System.IO.__Error.ReaderClosed()
+   at System.IO.StreamReader.ReadLine()
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath)
+2022-05-04 10:04:26,393 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 65
+2022-05-04 10:05:07,174 [1] ERROR LoadCSV.LoadForm - Erro message:Cannot read from a closed TextReader.
+System.ObjectDisposedException: Cannot read from a closed TextReader.
+   at System.IO.__Error.ReaderClosed()
+   at System.IO.StreamReader.ReadLine()
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 46
+2022-05-04 10:06:00,808 [1] ERROR LoadCSV.LoadForm - Erro message:Illegal characters in path.
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.CreateText(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 65
+2022-05-04 23:33:41,249 [1] ERROR LoadCSV.LoadForm - Erro message:Empty path name is not legal.
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath, String saveFilePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 43
+2022-05-04 23:49:14,256 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 46
+2022-05-04 23:50:02,458 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 46
+2022-05-04 23:51:45,795 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Users\z003wbsy\Desktop\sample4.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 44
+2022-05-04 23:52:09,864 [1] ERROR LoadCSV.LoadForm - Erro message:The ',' character, hexadecimal value 0x2C, cannot be included in a name.
+System.Xml.XmlException: The ',' character, hexadecimal value 0x2C, cannot be included in a name.
+   at System.Xml.XmlConvert.VerifyNCName(String name, ExceptionType exceptionType)
+   at System.Xml.Linq.XName..ctor(XNamespace ns, String localName)
+   at System.Xml.Linq.XNamespace.GetName(String localName)
+   at System.Xml.Linq.XName.Get(String expandedName)
+   at System.Xml.Linq.XName.op_Implicit(String expandedName)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 80
+2022-05-04 23:53:56,672 [1] ERROR LoadCSV.LoadForm - Erro message:The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+System.IO.IOException: The process cannot access the file 'C:\Personal\username.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 44
+2022-05-06 08:34:33,453 [1] ERROR LoadCSV.LoadForm - Erro message:The ';' character, hexadecimal value 0x3B, cannot be included in a name.
+System.Xml.XmlException: The ';' character, hexadecimal value 0x3B, cannot be included in a name.
+   at System.Xml.XmlConvert.VerifyNCName(String name, ExceptionType exceptionType)
+   at System.Xml.Linq.XName..ctor(XNamespace ns, String localName)
+   at System.Xml.Linq.XNamespace.GetName(String localName)
+   at System.Xml.Linq.XName.Get(String expandedName)
+   at System.Xml.Linq.XName.op_Implicit(String expandedName)
+   at LoadCSV.LoadForm.WriteCSVContentToXml(String filePath) in D:\Personal\Coda\CodaPayments\LoadCSV\LoadForm.cs:line 88
